@@ -71,7 +71,9 @@ public class CircleQueueDriver {
 	{			
 		//queue
 		CircleQueueDriver trial = new CircleQueueDriver();
-		
+		System.out.println("___________________________________________________________________");
+		System.out.println("Sorting by Insertion");
+		System.out.println("");
 		//add different types of objects to the same opaque queue
 		trial.addCQueue(Animal.animalData());
 		trial.addCQueue(Cupcakes.cupCakeData());
@@ -83,8 +85,8 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.name;
 		Cupcakes.key = Cupcakes.KeyType.flavor;
 		Alphabet.key = Alphabet.KeyType.letter;
-		trial.cqueue.selectionSort();
-		System.out.println("Sorting by Selection");
+		trial.cqueue.insertionSort();
+		System.out.println("Sorting by Insertion...");
 		trial.showCQueue();
 		
 		//display queue objects
@@ -95,6 +97,39 @@ public class CircleQueueDriver {
 		
 		//delete queue objects
 		trial.deleteCQueue();
+		
+		/*
+		 * Running again but this time with selection
+		 */
+		
+		//queue
+		CircleQueueDriver trial2 = new CircleQueueDriver();
+		System.out.println("___________________________________________________________________");
+		System.out.println("Sorting by Selection");
+		System.out.println("");
+		//add different types of objects to the same opaque queue
+		trial2.addCQueue(Animal.animalData());
+		trial2.addCQueue(Cupcakes.cupCakeData());
+		trial2.addCQueue(Alphabet.alphabetData());		
+		//display queue objects in queue order
+		trial2.showCQueue();
+		
+		//sort queue objects by specific element within the object and display in sort order
+		Animal.key = Animal.KeyType.name;
+		Cupcakes.key = Cupcakes.KeyType.flavor;
+		Alphabet.key = Alphabet.KeyType.letter;
+		trial2.cqueue.selectionSort();
+		System.out.println("Sorting by Selection...");
+		trial2.showCQueue();
+		
+		//display queue objects
+		Animal.key = Animal.KeyType.combo;
+		Cupcakes.key = Cupcakes.KeyType.combo;
+		Alphabet.key = Alphabet.KeyType.combo;
+		trial2.showCQueue();
+		
+		//delete queue objects
+		trial2.deleteCQueue();
 	}
 	
 }
