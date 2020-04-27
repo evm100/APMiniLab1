@@ -1,7 +1,5 @@
 package sorts;
 
-import java.util.*;
-
 /**
  *  Implementation of Queue, using LinkedList (previous and next).
  *
@@ -206,6 +204,43 @@ public class CircleQueue
     } 
     
   } 
+  
+  public void selectionSort() {	
+		
+		//two nodes needed for insertion sort indexes
+	    LinkedList node1 = headNode;
+	    LinkedList node2 = (node1 == null) ? null : node1.getNext();
+	    
+	    //continue while nodes remain in bounds
+	    while (node2 != null) {	
+
+	    	//the node that will be representing all nodes to compare against the min
+	    	LinkedList current = node2;
+			//the smallest found value in LinkedList. It will be put in the beginning of the searched list
+			LinkedList min = node1;
+
+			//will look through whole list starting at index for smallest value object
+			while (current != null) {
+				//if next node in search is smaller than currently held min, it will replace min. Based on objects' toString, alphabetical
+				if ( current.getObject().toString().compareTo(min.getObject().toString()) < 0 ) {
+					min = current;
+				}
+				//cycle to next (looking for smallest)
+				current = current.getNext();
+			}
+
+			//Swapping out the current node for the found smallest node
+			Object swap = node1.getObject();
+			node1.setObject(min.getObject());
+			min.setObject(swap);
+
+
+	    	//advance insertion sort indexes
+	    	node1 = node1.getNext();
+	    	node2 = node2.getNext();
+	    } 
+	    
+	  }
   
 }
 

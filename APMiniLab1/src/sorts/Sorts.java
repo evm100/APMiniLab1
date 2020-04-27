@@ -169,4 +169,19 @@ public class Sorts
         is.listType = ListType.Selection;
         System.out.println(is);
     }
+    
+    /*
+     * Based on the operation, compare and swap count in a sample trial:
+     * 
+     * Bubble: 1757, 1225, 532
+     * Insertion: 1113, 532, 581
+     * Selection: 1338, 1225, 113
+     * 
+     * Insertion appears to be the most effective way to sort. 
+     * I believe this also to be true do to the nature of the algorithim.
+     * It works by directly moving the subject value to its almost final location.
+     * Instead of moving numbers around many times per iteration, only the specified
+     * number moves while pushing the rest.
+     * 
+     */
 }
