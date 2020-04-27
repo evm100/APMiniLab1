@@ -1,4 +1,4 @@
- 
+package sorts; 
 
 /*
  * Animal class

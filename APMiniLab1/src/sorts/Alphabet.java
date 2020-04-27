@@ -1,3 +1,5 @@
+package sorts;
+
 public class Alphabet extends Generics {
 	public static final String type = "Alphabet";
 	private static final int size = 26;
