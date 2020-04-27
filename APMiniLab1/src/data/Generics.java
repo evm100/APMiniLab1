@@ -1,4 +1,4 @@
-package sorts; 
+package data; 
 
 public abstract class Generics {
 	public static final String type = "Generic";

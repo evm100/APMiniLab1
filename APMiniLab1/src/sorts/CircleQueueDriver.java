@@ -1,6 +1,10 @@
 package sorts;
 
- 
+import data.Alphabet;
+import data.Animal;
+import data.Cupcakes;
+import data.Student;
+
 /**
  * Circle Queue Driver takes a list of Objects and puts them into a Queue
  * @author     John Mortensen
@@ -77,7 +81,8 @@ public class CircleQueueDriver {
 		//add different types of objects to the same opaque queue
 		trial.addCQueue(Animal.animalData());
 		trial.addCQueue(Cupcakes.cupCakeData());
-		trial.addCQueue(Alphabet.alphabetData());		
+		trial.addCQueue(Alphabet.alphabetData());
+		trial.addCQueue(Student.studentData());
 		//display queue objects in queue order
 		trial.showCQueue();
 		
@@ -85,6 +90,7 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.name;
 		Cupcakes.key = Cupcakes.KeyType.flavor;
 		Alphabet.key = Alphabet.KeyType.letter;
+		Student.key = Student.KeyType.name;
 		trial.cqueue.insertionSort();
 		System.out.println("Sorting by Insertion...");
 		trial.showCQueue();
@@ -93,6 +99,7 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.combo;
 		Cupcakes.key = Cupcakes.KeyType.combo;
 		Alphabet.key = Alphabet.KeyType.combo;
+		Student.key = Student.KeyType.combo;
 		trial.showCQueue();
 		
 		//delete queue objects
@@ -110,7 +117,8 @@ public class CircleQueueDriver {
 		//add different types of objects to the same opaque queue
 		trial2.addCQueue(Animal.animalData());
 		trial2.addCQueue(Cupcakes.cupCakeData());
-		trial2.addCQueue(Alphabet.alphabetData());		
+		trial2.addCQueue(Alphabet.alphabetData());
+		trial2.addCQueue(Student.studentData());
 		//display queue objects in queue order
 		trial2.showCQueue();
 		
@@ -118,6 +126,7 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.name;
 		Cupcakes.key = Cupcakes.KeyType.flavor;
 		Alphabet.key = Alphabet.KeyType.letter;
+		Student.key = Student.KeyType.name;
 		trial2.cqueue.selectionSort();
 		System.out.println("Sorting by Selection...");
 		trial2.showCQueue();
@@ -126,6 +135,7 @@ public class CircleQueueDriver {
 		Animal.key = Animal.KeyType.combo;
 		Cupcakes.key = Cupcakes.KeyType.combo;
 		Alphabet.key = Alphabet.KeyType.combo;
+		Student.key = Student.KeyType.combo;
 		trial2.showCQueue();
 		
 		//delete queue objects

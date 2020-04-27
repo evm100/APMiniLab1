@@ -1,4 +1,6 @@
-package sorts;
+package data;
+
+import sorts.ConsoleMethods;
 
 public class Alphabet extends Generics {
 	public static final String type = "Alphabet";

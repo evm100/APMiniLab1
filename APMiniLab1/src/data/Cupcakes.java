@@ -1,4 +1,4 @@
-package sorts; 
+package data;
 
 public class Cupcakes extends Generics {
 	public static final String type = "Cupcakes";
