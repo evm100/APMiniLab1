@@ -10,18 +10,18 @@ import data.Student;
  * @author     John Mortensen
  *
  */
-public class CircleQueueDriver {
+public class CircleQueueDriverAL {
 	
-	private CircleQueue cqueue;	// circle queue object
+	private CircleQueueAL cqueue;	// circle queue object
 	private int count; // number of objects in circle queue
 
 	/* 
 	 * Circle queue constructor
 	 */
-	public CircleQueueDriver()
+	public CircleQueueDriverAL()
 	{
 		count = 0;		
-		cqueue = new CircleQueue();
+		cqueue = new CircleQueueAL();
 	}
 
 	/*
@@ -74,7 +74,7 @@ public class CircleQueueDriver {
 	
 	{			
 		//queue
-		CircleQueueDriver trial = new CircleQueueDriver();
+		CircleQueueDriverAL trial = new CircleQueueDriverAL();
 		System.out.println("___________________________________________________________________");
 		System.out.println("Sorting by Insertion");
 		System.out.println("");
@@ -110,7 +110,7 @@ public class CircleQueueDriver {
 		 */
 		
 		//queue
-		CircleQueueDriver trial2 = new CircleQueueDriver();
+		CircleQueueDriverAL trial2 = new CircleQueueDriverAL();
 		System.out.println("___________________________________________________________________");
 		System.out.println("Sorting by Selection");
 		System.out.println("");
