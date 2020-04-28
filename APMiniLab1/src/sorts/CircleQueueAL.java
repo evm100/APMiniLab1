@@ -1,7 +1,6 @@
 package sorts;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class CircleQueueAL
 {
