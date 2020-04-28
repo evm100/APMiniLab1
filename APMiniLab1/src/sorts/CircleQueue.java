@@ -1,11 +1,5 @@
 package sorts;
 
-/**
- *  Implementation of Queue, using LinkedList (previous and next).
- *
- * @author     John Mortensen
- * @created    December 24, 2019
- */
 public class CircleQueue
 {
    private LinkedList headNode;			// 1st element in Queue

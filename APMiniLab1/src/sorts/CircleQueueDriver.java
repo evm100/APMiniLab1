@@ -12,7 +12,7 @@ import data.Student;
  */
 public class CircleQueueDriver {
 	
-	private CircleQueue cqueue;	// circle queue object
+	private CircleQueueAL cqueue;	// circle queue object
 	private int count; // number of objects in circle queue
 
 	/* 
@@ -21,7 +21,7 @@ public class CircleQueueDriver {
 	public CircleQueueDriver()
 	{
 		count = 0;		
-		cqueue = new CircleQueue();
+		cqueue = new CircleQueueAL();
 	}
 
 	/*
